@@ -2,6 +2,8 @@
   "hostType": "tunnel",
   "lanType": "ip",
   "dev": true,
+  "strict": false,
   "minify": false,
-  "urlRandomness": "w9-xs2"
+  "urlType": "exp",
+  "urlRandomness": "fd-khr"
 }
