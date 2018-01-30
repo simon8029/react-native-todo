@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "expo": {
     "name": "react_native_todo",
     "description": "This project is really great.",
@@ -21,4 +22,8 @@
       "supportsTablet": true
     }
   }
+=======
+  "name": "react_native_todo",
+  "displayName": "react_native_todo"
+>>>>>>> 7b6b622de14cec9280c6e32746ee18b7e18a2c24
 }
