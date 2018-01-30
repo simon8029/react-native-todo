@@ -12,6 +12,7 @@ import {
   Text,
   View
 } from 'react-native';
+import Fancy from './src/app/Fancy';
 
 
 
@@ -19,6 +20,7 @@ export default class App extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
+        <Fancy />
         <Todo />
       </View>
     );
