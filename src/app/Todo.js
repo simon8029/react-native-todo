@@ -37,6 +37,11 @@ class Todo extends React.Component {
         'Content-Type': 'application/json'
       }
     })
+      .then(res => res.json())
+      .then(todo => {
+        const todos = [...this.state.todos, todo];
+        this.setState({ todos });
+      })
   }
 
   render() {
