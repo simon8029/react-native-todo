@@ -5,6 +5,8 @@
  */
 
 import React, { Component } from 'react';
+import { Provider } from 'react-redux';
+import store from './src/app/store';
 import Todo from './src/app/Todo';
 import {
   Platform,
@@ -19,21 +21,10 @@ import Fancy from './src/app/Fancy';
 export default class App extends Component<{}> {
   render() {
     return (
-      <View style={styles.container}>
+      <Provider store={store}>
         <Todo />
-      </View>
+      </Provider>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
 });

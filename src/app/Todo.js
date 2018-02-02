@@ -1,5 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableHighlight, TouchableOpacity } from 'react-native';
+import TodoForm from './todo-form';
+
 class Todo extends React.Component {
   constructor(props) {
     super(props);
@@ -47,24 +49,11 @@ class Todo extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.form}>
-          <TextInput
-            style={styles.textInput}
-            underlineColorAndroid="transparent"
-            autoCorrect={false}
-            placeholder="Input here..."
-            placeholderTextColor="grey"
-            clearButtonMode="always"
-            onChangeText={this.onTextInputChange}
-            value={this.state.newTodo}
-          />
-          <TouchableOpacity
-            style={styles.button}
-            onPress={this.onCreatePressed}
-          >
-            <Text style={styles.buttonText}>Create</Text>
-          </TouchableOpacity>
-        </View>
+        {/* <TodoForm
+          onCreatePressed={this.onCreatePressed}
+          onTextInputChange={this.onTextInputChange}
+          value={this.state.newTodo}
+        /> */}
         <View style={styles.View}>
           {this.state.todos.map((todo) =>
             (<Text key={todo.id} style={styles.Text}>{todo.name}</Text>)
