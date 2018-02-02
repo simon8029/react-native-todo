@@ -13,7 +13,7 @@ class Todo extends React.Component {
   }
 
   componentWillMount() {
-    fetch('http://10.0.1.15:8139/todos', {
+    fetch('http://localhost:8139/todos', {
       headers: {
         'Accept': 'application/json'
       }
